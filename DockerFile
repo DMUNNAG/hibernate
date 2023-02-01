@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD target/hibernatetest.jar hibernatetest.jar
+ENTRYPOINT ["java", "-jar","hibernatetest.jar"]
+EXPOSE 8090
